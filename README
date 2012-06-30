@@ -1,0 +1,66 @@
+Computer NEtworks assignment 2
+
+Lab Group:
+ 
+ 1) Ayesha Mudassir [09007014]
+ 2) Kedar Tatwawadi [09D07022]
+ 
+ 
+ myftp_server.cpp -- a minimalistic ftp server
+  the code snippets were adapted from various sources:
+ 1) http://cboard.cprogramming.com/c-programming/102068-copy-read-write-binary-file-mp3.html
+   (cprogramming.com)
+ 2) http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html
+   (beej programming tutorial)
+
+	
+The files included are:
+1) myftp_server.cpp
+2) myftp_client.cpp
+3) Makefile
+4) readme
+5) sample_files/
+
+
+Assignment Specifications:
+**************************************************************
+Note: It is ok to replicate code found from the Internet. But
+when you do so, you have to explicitly mention the site from
+where you copied the code. You cannot copy code from other
+students, nor can you ask other students about a website from
+where they got relevant code from (i.e., You should do the search
+yourself and figure out which is the appropriate code for this
+assignment).
+**************************************************************
+In this assignment you will learn to program a basic ftp application using
+TCP sockets.
+
+Write a server and a client program using C or C++ and TCP socket such that
+a file on the server host is transferred to the client host.
+
+The server program should be started with the following command:
+myftp_server <port_no>
+where <port_no> is the port on which the server would be listening for
+packets from the client.
+
+The client program should be started with the following command:
+myftp_client <server_ip> <server_port> <file_name>
+where server_ip is the IP address of the host on which the server program
+is running and <server_port> is the port on which the
+server program is waiting for connections. <file_name> is the file
+that should be transferred from the server host to the client host.
+
+If the file does not exist on the server host, an error message
+"File <file_name> does not exist" should appear at the client host,
+otherwise a message "File succesfully received" should be displayed
+on the client after the transfer is over.
+
+
+
+
+Problems faced:
+
+1) The ftp server works very well when tested on localhost
+2) IT also works well for files with smaller file sizes over the network
+3) It doesnt work well for larger files over the network, we were unable to solve the problem.
+
